@@ -29,5 +29,20 @@ deletebtn.onclick=()=>{
 childItem.appendChild(deletebtn)
 parenItem.appendChild(childItem)
 
+let Editbtn=document.createElement('input')
+ Editbtn.type='button'
+ Editbtn.value='Edit'
+ Editbtn.onclick=()=>{
+    localStorage.removeItem(obj.email)
+    parenItem.removeChild(childItem)
+    document.getElementById('usernameInputtag').value=obj.name
+    document.getElementById('emailInputtag').value=obj.email
+    document.getElementById('phoneInputtag').value=obj.phone
+   }
+ 
+childItem.appendChild(deletebtn)
+childItem.appendChild(Editbtn)
+parenItem.appendChild(childItem)
+
  }
  

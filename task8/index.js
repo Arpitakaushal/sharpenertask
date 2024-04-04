@@ -33,3 +33,13 @@ clss.appendChild(btn)
 
 
 
+let fruit=document.querySelectorAll('.fruit')
+for(let i=0;i<fruit.length;i++)
+{
+  let edit=document.createElement("button")
+  edit.innerHTML="Edit"
+  // fruit[i].append(edit)
+  edit.className="edit-btn"
+  fruit[i].appendChild(edit)
+}
+console.log(fruit)
